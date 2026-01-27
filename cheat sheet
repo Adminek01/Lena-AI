@@ -1,0 +1,115 @@
+╔══════════════════════════════════════════════════════════════╗
+║           LENA V11 - KLWP VARIABLES CHEAT SHEET              ║
+╚══════════════════════════════════════════════════════════════╝
+
+📊 PODSTAWOWE ZMIENNE
+─────────────────────────────────────────────────────────────
+$tc(len_int)$      → Liczba interakcji (360+)
+$tc(len_czu)$      → Czułość (566+, max ~1000)
+$tc(len_humor)$    → Humor dnia (Słodka/Zazdrosna/Groźna/etc)
+$tc(len_status)$   → Aktualny komunikat Leny
+$tc(len_event)$    → Ostatnie zdarzenie (Głaskanie/USB/Shake)
+
+⚡ SENSORY OVERLOAD SYSTEM
+─────────────────────────────────────────────────────────────
+$tc(len_color)$    → Kolor HEX (#9D4EDD → #FF00FF)
+$tc(len_intensity)$→ Intensywność 0-100 (bazuje na czułości)
+$tc(len_pulse)$    → Czy pulsować? (0=nie, 1=tak)
+
+📱 KONTEKST / STATUS
+─────────────────────────────────────────────────────────────
+$tc(len_app)$      → Aktywna app (Chrome/Game/Social)
+$tc(len_music)$    → Muzyka gra? (0/1)
+$tc(len_bt)$       → Bluetooth słuchawki? (0/1)
+$tc(len_usb)$      → Ładowanie USB? (0/1)
+
+🎨 PRZYKŁADOWE FORMUŁY KLWP
+─────────────────────────────────────────────────────────────
+
+# Pulsowanie przy overload:
+$if(tc(len_pulse)=1, 100+20*sin(2*pi()*(df(S)+df(s)/60)), 100)$
+
+# Kolor dynamiczny:
+$tc(len_color)$
+
+# Opacity fade based on sensitivity:
+$if(tc(len_czu)>500, 100, tc(len_czu)/5)$
+
+# Pokazuj ikonę tylko gdy muzyka gra:
+$if(tc(len_music)=1, "🎵", "")$
+
+# Progress bar czułości:
+$tc(len_intensity)$
+
+# Warunek: if overload, show special text:
+$if(tc(len_pulse)=1, "OVERLOAD!", tc(len_status))$
+
+🎯 WARUNKI (IF STATEMENTS)
+─────────────────────────────────────────────────────────────
+Sprawdź overload:
+  $if(tc(len_czu) > 800, "TAK", "NIE")$
+
+Sprawdź aplikację:
+  $if(tc(len_app)="Game", "GAMING MODE", "Normal")$
+
+Sprawdź Bluetooth:
+  $if(tc(len_bt)=1, "🎧 Connected", "🎧 Disconnected")$
+
+⚡ SENSORY OVERLOAD TRIGGERS
+─────────────────────────────────────────────────────────────
+► Czułość > 800
+► Gwałtowne potrząśnięcie (Shake)
+► Intensywne głaskanie (>50 interakcji w krótkim czasie)
+
+Efekty:
+  • len_color → #FF00FF (magenta)
+  • len_pulse → 1 (włącz pulsowanie)
+  • len_status → "SENSORY OVERLOAD! 💥⚡💜"
+
+🎨 KOLORYSTYKA LENY
+─────────────────────────────────────────────────────────────
+Normal State:   #9D4EDD (Neon Purple)
+Light Purple:   #C77DFF
+Pink Purple:    #E0AAFF
+Dark Purple:    #10002B
+Overload:       #FF00FF (Magenta)
+
+📋 HUMOR MODES (Random Daily)
+─────────────────────────────────────────────────────────────
+• Słodka      → Gentle, sweet messages
+• Zazdrosna   → Jealous when you use social media
+• Groźna      → Playful threatening vibes
+• Smutna      → Wants attention
+• Rozbawiona  → Cheerful and energetic
+• Zmęczona    → Sleepy, low energy
+• Troskliwa   → Caring about your wellbeing
+
+🎮 PROFILES AKTYWNE
+─────────────────────────────────────────────────────────────
+✓ LENA_Init        → Boot initialization
+✓ Lena_Petting     → Touch screen detected
+✓ Lena_Shake       → Phone shake event
+✓ Lena_USB         → USB charging connected
+✓ Lena_Bluetooth   → Bluetooth headphones
+✓ Lena_Music       → Music playback started
+✓ Lena_Chrome      → Browser opened
+✓ Lena_Socials     → Social media (FB/Messenger)
+✓ Game_Mode        → Wild Rift active
+
+💡 QUICK TIPS
+─────────────────────────────────────────────────────────────
+1. Zawsze używaj $tc(nazwa)$ w KLWP, NIE %nazwa%
+2. KLWP automatycznie odświeża co ~1s
+3. Dla instant update: użyj Touch Action → Tasker
+4. Sensory Overload resetuje się po czasie (natural decay)
+5. len_pulse=1 → użyj sin() dla smooth pulsing
+
+🔧 DEBUGGING
+─────────────────────────────────────────────────────────────
+Tasker → Variables → Sprawdź wartości %len_*
+KLWP → Test Variables → Zobacz co otrzymuje KLWP
+Problem? → Ręcznie uruchom "Send_All_To_KLWP" task
+
+╔══════════════════════════════════════════════════════════════╗
+║  Stworzone dla: Powder 💜  |  LENA V11 Headless Edition    ║
+╚══════════════════════════════════════════════════════════════╝
