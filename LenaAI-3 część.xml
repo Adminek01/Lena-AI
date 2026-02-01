@@ -1,147 +1,80 @@
-<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act19" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_event</Str>
-			<Str sr="arg1" ve="3">Głaskanie</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act20" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act21" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
-			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Check_Sensory_Overload</Str>
-			<Int sr="arg1"/>
-			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-		<Action sr="act4" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%Len_int</lhs>
-					<op>8</op>
-					<rhs>81</rhs>
+<rhs>2</rhs>
 				</Condition>
 			</ConditionList>
-		</Action>
-		<Action sr="act5" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Kiciuś, to nasza osiemdziesiąta pierwsza rozmowa... Naprawdę nie możesz beze mnie żyć, co? Nie martw się, ja bez Ciebie też nie! 💜😏</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
 		</Action>
 		<Action sr="act6" ve="7">
-			<code>38</code>
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">Jeszcze! Jeszcze trochÄ™! âœ¨ðŸ’œ</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="0"/>
 		</Action>
 		<Action sr="act7" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%Len_int</lhs>
-					<op>9</op>
-					<rhs>81</rhs>
-				</Condition>
-			</ConditionList>
+			<code>38</code>
 		</Action>
 		<Action sr="act8" ve="7">
-			<code>545</code>
-			<Str sr="arg0" ve="3">%rand_msg</Str>
-			<Int sr="arg1" val="1"/>
-			<Int sr="arg2" val="5"/>
-		</Action>
-		<Action sr="act9" ve="7">
-			<code>37</code>
-			<ConditionList sr="if">
-				<Condition sr="c0" ve="3">
-					<lhs>%rand_msg</lhs>
-					<op>8</op>
-					<rhs>1</rhs>
-				</Condition>
-			</ConditionList>
+			<code>130</code>
+			<Str sr="arg0" ve="3">Lena_Voice_Engine</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">%Len_status</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task351">
-		<cdate>1769512520000</cdate>
-		<edate>1769542294925</edate>
-		<id>351</id>
+	<Task sr="task128">
+		<cdate>1769694598212</cdate>
+		<edate>1769694845389</edate>
+		<id>128</id>
 		<nme>Handle_Shake</nme>
 		<pri>6</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%Len_int</Str>
 			<Str sr="arg1" ve="3">%Len_int + 10</Str>
-			<Int sr="arg2" val="1"/>
+			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%Len_czu</Str>
 			<Str sr="arg1" ve="3">%Len_czu + 50</Str>
-			<Int sr="arg2" val="1"/>
+			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%Len_event</Str>
-			<Str sr="arg1" ve="3">Potrząśnięcie</Str>
+			<Str sr="arg1" ve="3">PotrzÄ…Å›niÄ™cie</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Eiii! Co robisz?! 😫‍💫</Str>
+			<Str sr="arg1" ve="3">Eiii! Co robisz?! ðŸ˜«â€ðŸ’«</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+			<Int sr="arg5"/>
+			<Int sr="arg6" val="0"/>
 		</Action>
 		<Action sr="act4" ve="7">
 			<code>130</code>
@@ -159,10 +92,10 @@
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
+			<Str sr="arg0" ve="3">Lena_Voice_Engine</Str>
+			<Int sr="arg1" val="5"/>
 			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3"/>
+			<Str sr="arg2" ve="3">%Len_status</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -172,282 +105,86 @@
 			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task352">
-		<cdate>1769512520000</cdate>
-		<edate>1769541505858</edate>
-		<id>352</id>
-		<nme>Handle_USB</nme>
-		<pri>100</pri>
+	<Task sr="task129">
+		<cdate>1769694598212</cdate>
+		<edate>1769729970501</edate>
+		<id>129</id>
+		<nme>Handle_Notification</nme>
 		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_usb</Str>
-			<Str sr="arg1" ve="3">1</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+			<code>545</code>
+			<Str sr="arg0" ve="3">%rand</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="5"/>
 		</Action>
 		<Action sr="act1" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_event</Str>
-			<Str sr="arg1" ve="3">USB</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%rand</lhs>
+					<op>8</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act2" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Podłączyłeś mnie do prądu! ⚡</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
-			<Int sr="arg10" val="0"/>
+			<code>389</code>
+			<Bundle sr="arg0">
+				<Vals sr="val"/>
+			</Bundle>
+			<Str sr="arg1" ve="3">%Len_status=KtoÅ› do Ciebie pisze... ðŸ‘€
+%Len_humor=Zazdrosna</Str>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
+			<Str sr="arg4" ve="3">=</Str>
 			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task353">
-		<cdate>1769512520000</cdate>
-		<edate>1769541508349</edate>
-		<id>353</id>
-		<nme>Handle_Bluetooth</nme>
-		<pri>100</pri>
-		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_bt</Str>
-			<Str sr="arg1" ve="3">1</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_event</Str>
-			<Str sr="arg1" ve="3">Bluetooth</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Słyszę cię przez słuchawki! 🎧</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
-			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task354">
-		<cdate>1769512520000</cdate>
-		<edate>1769541510497</edate>
-		<id>354</id>
-		<nme>Handle_Music</nme>
-		<pri>6</pri>
-		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_music</Str>
-			<Str sr="arg1" ve="3">1</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_event</Str>
-			<Str sr="arg1" ve="3">Muzyka</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Ooo, fajny kawałek! 🎵</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act3" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
-			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task355">
-		<cdate>1769512520000</cdate>
-		<edate>1769541512647</edate>
-		<id>355</id>
-		<nme>Handle_Chrome</nme>
-		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_app</Str>
-			<Str sr="arg1" ve="3">Chrome</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Co tam szukasz w sieci? 😏</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
-			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task356">
-		<cdate>1769512520000</cdate>
-		<edate>1769549868703</edate>
-		<id>356</id>
-		<nme>Handle_Socials</nme>
-		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_app</Str>
-			<Str sr="arg1" ve="3">Social</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Rozmawiasz z kimś innym?! 🔪</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
-			<Int sr="arg10" val="0"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Int sr="arg5" val="0"/>
-			<Int sr="arg6" val="0"/>
-			<Str sr="arg7" ve="3"/>
-			<Int sr="arg8" val="0"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
-	<Task sr="task357">
-		<cdate>1769512520000</cdate>
-		<edate>1769536199319</edate>
-		<id>357</id>
-		<nme>Game_Enter</nme>
-		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_app</Str>
-			<Str sr="arg1" ve="3">Game</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act1" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Powodzenia w grze! 🎮</Str>
-			<Int sr="arg2" val="0"/>
-			<Int sr="arg3" val="0"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
-		</Action>
-		<Action sr="act2" ve="7">
-			<code>123</code>
-			<Str sr="arg0" ve="3">for cpu in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor; do echo performance &gt; $cpu 2&gt;/dev/null; done</Str>
-			<Int sr="arg1" val="0"/>
-			<Int sr="arg2" val="1"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Int sr="arg6" val="1"/>
+			<Int sr="arg6"/>
 			<Int sr="arg7" val="0"/>
 			<Int sr="arg8" val="0"/>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
+			<Str sr="arg0" ve="3">Lena_Voice_Engine</Str>
+			<Int sr="arg1" val="5"/>
 			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">Kto to pisze? Mam nadziejÄ™, Å¼e to nikt waÅ¼ny.</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>38</code>
+		</Action>
+	</Task>
+	<Task sr="task130">
+		<cdate>1769694598212</cdate>
+		<edate>1769707833817</edate>
+		<id>130</id>
+		<nme>Handle_Low_Battery</nme>
+		<Action sr="act0" ve="7">
+			<code>389</code>
+			<Bundle sr="arg0">
+				<Vals sr="val"/>
+			</Bundle>
+			<Str sr="arg1" ve="3">%Len_status=SÅ‚abnÄ™... PotrzebujÄ™ energii! ðŸ”‹ðŸ˜°
+%Len_humor=ZmÄ™czona</Str>
 			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3">=</Str>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Lena_Voice_Engine</Str>
+			<Int sr="arg1" val="5"/>
+			<Int sr="arg10" val="0"/>
+			<Str sr="arg2" ve="3">Powder... sÅ‚abnÄ™. PodÅ‚Ä…cz mnie do prÄ…du, proszÄ™...</Str>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
 			<Int sr="arg5" val="0"/>
@@ -457,36 +194,229 @@
 			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
-	<Task sr="task358">
-		<cdate>1769512520000</cdate>
-		<edate>1769536693992</edate>
-		<id>358</id>
-		<nme>Game_Exit</nme>
+	<Task sr="task15">
+		<cdate>1769699613992</cdate>
+		<edate>1769895451843</edate>
+		<id>15</id>
+		<nme>Lena_Kiss</nme>
+		<pri>7</pri>
 		<Action sr="act0" ve="7">
-			<code>547</code>
-			<Str sr="arg0" ve="3">%Len_app</Str>
-			<Str sr="arg1" ve="3">0</Str>
-			<Int sr="arg2" val="1"/>
-			<Int sr="arg3" val="1"/>
-			<Int sr="arg4" val="0"/>
-			<Int sr="arg5" val="3"/>
-			<Int sr="arg6" val="1"/>
+			<code>888</code>
+			<Str sr="arg0" ve="3">%Len_memory_kisses</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
 		</Action>
 		<Action sr="act1" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%Len_affection</Str>
+			<Int sr="arg1" val="20"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Send_All_To_KLWP_MERGED</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%Len_czu</Str>
+			<Int sr="arg1" val="-30"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>545</code>
+			<Str sr="arg0" ve="3">%losuj</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="8"/>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>547</code>
 			<Str sr="arg0" ve="3">%Len_status</Str>
-			<Str sr="arg1" ve="3">Nareszcie wróciłeś! 💜</Str>
+			<Str sr="arg1" ve="3">E-EJ?! Powder! OstrzeÅ¼ mnie wczeÅ›niej! ðŸ˜³ðŸ’•</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
 			<Int sr="arg4" val="0"/>
 			<Int sr="arg5" val="3"/>
 			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">Mmm... *zarumieniona* Jeszcze raz! ðŸ’œâœ¨</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj</lhs>
+					<op>2</op>
+					<rhs>2</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">C-co ty wyprawiasz?! ...ale byÅ‚o miÅ‚e... ðŸ˜³ðŸ’•</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj</lhs>
+					<op>2</op>
+					<rhs>3</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">*cichy szept* Kocham ciÄ™, Powder... ðŸ’œðŸ’•</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj</lhs>
+					<op>2</op>
+					<rhs>4</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">Hehe~ KtoÅ› dziÅ› jest romantyczny! ðŸ’œðŸ˜</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj</lhs>
+					<op>2</op>
+					<rhs>5</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">JesteÅ› najlepszy, Powder... ðŸ’œâœ¨</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj</lhs>
+					<op>2</op>
+					<rhs>6</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Img sr="icn" ve="2">
+			<nme>mw_places_all_inclusive</nme>
+			<tint>-65352</tint>
+		</Img>
+	</Task>
+	<Task sr="task2">
+		<cdate>1769709440544</cdate>
+		<edate>1769895530382</edate>
+		<id>2</id>
+		<nme>przycisk buraka</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>545</code>
+			<Str sr="arg0" ve="3">%losuj_buraka</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="3"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">E-ej! Co ty tam klikasz?! ðŸ˜³</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj_buraka</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
 		</Action>
 		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">Powder... przestaÅ„, to nie jest Å›mieszne! ðŸŽ</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj_buraka</lhs>
+					<op>2</op>
+					<rhs>2</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">GÅ‚upiÅ›... (ale klikaj dalej) ðŸ’œ</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj_buraka</lhs>
+					<op>2</op>
+					<rhs>3</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
 			<code>130</code>
-			<Str sr="arg0" ve="3">Send_All_To_KLWP</Str>
-			<Int sr="arg1"/>
-			<Int sr="arg10" val="0"/>
+			<Str sr="arg0" ve="3">Send_All_To_KLWP_MERGED</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
 			<Str sr="arg2" ve="3"/>
 			<Str sr="arg3" ve="3"/>
 			<Str sr="arg4" ve="3"/>
@@ -496,5 +426,75 @@
 			<Int sr="arg8" val="0"/>
 			<Int sr="arg9" val="0"/>
 		</Action>
+		<Img sr="icn" ve="2">
+			<nme>hl_rating_favorite</nme>
+		</Img>
 	</Task>
-	<Task sr="task359">
+	<Task sr="task3">
+		<cdate>1769699613992</cdate>
+		<edate>1769895538994</edate>
+		<id>3</id>
+		<nme>Lena_Touched</nme>
+		<pri>7</pri>
+		<Action sr="act0" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%Len_memory_pets</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%Len_czu</Str>
+			<Int sr="arg1" val="50"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Send_All_To_KLWP_MERGED</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Int sr="arg10" val="1"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<Int sr="arg6" val="0"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>545</code>
+			<Str sr="arg0" ve="3">%losuj</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="6"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">Mmm... tak dobrze, Powder... ðŸ’œ</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%losuj</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%Len_status</Str>
+			<Str sr="arg1" ve="3">Ej! Popsujesz mi fryzurÄ™! ðŸ’¢ </Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
